@@ -15,6 +15,8 @@
 
 int toShift(char c)
 {
+    //returns how much the keyword's character is shifting and returns the number otherwise if
+    //outside bounds, it will return -1
     if ((int)c >= 65 && (int)c <= 90)
     {
         return (int)c - 65;
@@ -34,6 +36,8 @@ char shiftChar(char c, int rshift)
     }
     if ((int)c >= 65 && (int)c <= 90)
     {
+        //turns c into an int so that the base starting number can subtract from it, then subtract the shift and add 26 to get 
+        //the amount it should change by then add 65 and convert to char to get the resulting number
         return (char)((((int)c - 65 - rshift + 26) % 26) + 65);
     }
     else if ((int)c >= 97 && (int)c <= 122)
