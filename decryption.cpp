@@ -47,7 +47,7 @@ char shiftChar(char c, int rshift)
     return c;
 }
 
-std::string decryptVignere(std::string plaintext, std::string keyword)
+std::string decryptVigenere(std::string plaintext, std::string keyword)
 {
     std::string encryptedString = "";
     int count = 0;

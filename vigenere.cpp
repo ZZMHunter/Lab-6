@@ -43,7 +43,7 @@ char shiftChar(char c, int rshift)
     return c;
 }
 
-std::string encryptVignere(std::string plaintext, std::string keyword)
+std::string encryptVigenere(std::string plaintext, std::string keyword)
 {
     std::string encryptedString = "";
     int count = 0;
