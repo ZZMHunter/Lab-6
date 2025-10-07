@@ -68,6 +68,6 @@ int main()
     getline(std::cin, plaintext);
     std::cout << "Enter keyword: ";
     getline(std::cin, keyword);
-    std::cout << encryptVignere(plaintext, keyword);
+    std::cout << encryptVigenere(plaintext, keyword);
     return 0;
 }

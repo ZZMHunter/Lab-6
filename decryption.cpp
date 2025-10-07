@@ -87,6 +87,6 @@ int main()
     std::getline(std::cin, vigenereText);
     std::cout << "Enter keyword: ";
     std::getline(std::cin, keyword);
-    std::cout << decryptVignere(vigenereText, keyword) << std::endl;
+    std::cout << decryptVigenere(vigenereText, keyword) << std::endl;
     return 0;
 }
